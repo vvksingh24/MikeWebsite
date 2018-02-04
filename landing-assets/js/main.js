@@ -14,6 +14,7 @@ $('#mikelegaltm').on("click",function(){
 	$('#miketm').show();
 	if (!(hasClass($(this),'active')))
 	{
+		$('#litigation-video').html('');
 		document.getElementById("litigation-video").classList.add('l-video');
 		document.getElementById("mikelegaltm").classList.add('active');
 		document.getElementById("mikelegalai").classList.remove('active');
@@ -29,6 +30,8 @@ $('#mikelegalai').on("click",function(){
 	if (!(hasClass($(this),'active')))
 	{
 		document.getElementById("litigation-video").classList.remove('l-video');
+		$('#litigation-video').html('<iframe allowFullScreen frameborder="0" mozallowfullscreen src="https://player.vimeo.com/video/253207289?title=0&amp;byline=0&amp;portrait=0&amp;color=4285F4" webkitAllowFullScreen></iframe>');
+		$('#litigation-video').fitVids();
 		document.getElementById("mikelegalai").classList.add('active');
 		document.getElementById("mikelegaltm").classList.remove('active');
 	}
