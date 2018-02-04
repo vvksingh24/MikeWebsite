@@ -26,7 +26,6 @@ $('#mikelegalai').on("click",function(){
 	$('#litigation-video-heading').show();
 	// $(".fluid-video-container").fitVids();
 	// $('#litigation-video').show();
-	console.log('hello');
 	if (!(hasClass($(this),'active')))
 	{
 		document.getElementById("litigation-video").classList.remove('l-video');
@@ -40,7 +39,7 @@ $('.carousel').carousel({
     interval: 2000 //TIME IN MILLI SECONDS
 });
 var search = '<div class="title">\
-		        <h2>What is MikeTM Search?<\/h2>\
+		        <h2 class="underline">What is MikeTM Search?<\/h2>\
 		    <\/div>\
 		    <div class="row">\
 		        <div class="col-xs-12">\
@@ -96,7 +95,7 @@ var search = '<div class="title">\
 	    	<iframe allowFullScreen frameborder="0" mozallowfullscreen src="https://player.vimeo.com/video/253207291?title=0&amp;byline=0&amp;portrait=0&amp;color=4285F4" webkitAllowFullScreen></iframe>\
 	    <\/div>';
 var watch = '<div class="title">\
-		        <h2>What is MikeTM Watch?<\/h2>\
+		        <h2 class="underline">What is MikeTM Watch?<\/h2>\
 		    <\/div>\
 		    <div class="row">\
 		        <div class="col-xs-12">\
@@ -152,7 +151,7 @@ var watch = '<div class="title">\
 	    	<iframe allowFullScreen frameborder="0" mozallowfullscreen src="https://player.vimeo.com/video/253207302?title=0&amp;byline=0&amp;portrait=0&amp;color=4285F4" webkitAllowFullScreen></iframe>\
 	    </div>';
 var management = '<div class="title">\
-		        <h2>What is MikeTM Management?<\/h2>\
+		        <h2  class="underline">What is MikeTM Manager?<\/h2>\
 		    <\/div>\
 		    <div class="row">\
 		        <div class="col-xs-12">\
@@ -202,7 +201,7 @@ if (screen.width<768){
 }
 else{
 	$("#Search img, #Search p").mouseenter(function() {
-	    $('#swm-question').html('<h2>What is MikeTM Search?</h2>');
+	    $('#swm-question').html('<h2 class="underline">What is MikeTM Search?</h2>');
 		$('#swm-question').css({'animation-name':'fadeIn','animation-duration': '3s'});
 		$('#swm-answer').html("<p>MikeTM Search is one of the world’s most advanced TM search tools built using AI and advanced technology to help lawyers and counsels identify similar marks and build an analysis within minutes. Mike TM Search empowers the lawyer to go beyond current methods of identifying similar marks allowing them to service clients better. As opposed to making a human spend hours and still covering a limited scope of marks that may be relevant, MikeTM Search gives you a holistic and detail view so you can always be 100% sure .</p>");
 		$('#swm-answer').css({'animation-name':'fadeIn','animation-duration': '3s'});
@@ -220,7 +219,7 @@ else{
 		$('#video').removeAttr('style');
 	});
 	$("#Watch img,#Watch p").mouseenter(function() {
-	    $('#swm-question').html('<h2>What is MikeTM Watch</h2>');
+	    $('#swm-question').html('<h2 class="underline">What is MikeTM Watch?</h2>');
 		$('#swm-question').css({'animation-name':'fadeIn','animation-duration': '3s'});
 		$('#swm-answer').html("<p>MikeTM Watch is one of the world’s most advanced trademark watch tool. It  analyzes the journal every week to show you potentially infringing marks by  automatically deploying various algorithms to identify infringing marks that today would have been missed or would take a huge amount of time to identify. With an easy access with cloud based dashboard no need for your associates to manually search across journals allowing your to generate more revenue with reduced costs.</p>");
 		$('#swm-answer').css({'animation-name':'fadeIn','animation-duration': '3s'});
@@ -237,7 +236,7 @@ else{
 		$('#video').removeAttr('style');
 	});
 	$("#Management img,#Management p").mouseenter(function() {
-	    $('#swm-question').html('<h2>What is MikeTM Management</h2>');
+	    $('#swm-question').html('<h2 class="underline">What is MikeTM Manager?</h2>');
 		$('#swm-question').css({'animation-name':'fadeIn','animation-duration': '3s'});
 		$('#swm-answer').html("<p>MikeTM Manager is one of kind automated solution to manage all your marks. Get a detailed, holistic view of your marks based on status segregation, date of application, upcoming hearing and much more. MikeTM Manager is in sync with the Trademark registry so always be updated with the changes to your marks.With MikeTM Manager you have Easy access, Easy management and Easy analysis</p>");
 		$('#swm-answer').css({'animation-name':'fadeIn','animation-duration': '3s'});
@@ -268,7 +267,6 @@ $('.multi-item-carousel .item').each(function(){
   next.children(':first-child').clone().appendTo($(this));
   
   for (var i=0;i<2;i++) {
-  	console.log(next.length);
     next=next.next();
     if (!next.length) {
         next = $(this).siblings(':first');
