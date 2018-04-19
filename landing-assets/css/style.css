@@ -414,6 +414,11 @@ footer h3{
 .img img{
 	max-width: 70%;
 }
+@media (min-width: 767px){
+.press-image img{
+	max-width: 55%;
+}
+}
 .benefits{
 	margin-top: 30px; 
 	background: linear-gradient(to bottom right ,#4285F4,#807BF8);
@@ -565,6 +570,20 @@ footer h3{
     > .item{
       transition: 500ms ease-in-out left;
     }
+    .active{
+      &.left{
+        left:-25%;
+      }
+      &.right{
+        left:25%;
+      }
+    }
+    .next{
+      left: 25%;
+    }
+    .prev{
+      left: -25%;
+    }
     @media all and (transform-3d), (-webkit-transform-3d) {
       > .item{
         // use your favourite prefixer here
@@ -578,5 +597,5 @@ footer h3{
   img{
   	width: 60%;
   }
-  }
+}
 }
