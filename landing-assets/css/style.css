@@ -421,12 +421,12 @@ footer h3{
 }
 .benefits{
 	margin-top: 30px; 
-	background: linear-gradient(to bottom right ,#4285F4,#807BF8);
+	background: #4285F4;
 	background-attachment:fixed;
 	position:relative;
 }
 .benefits::after{
-	background: linear-gradient(to bottom right ,#4285F4,#807BF8);
+	background: #4285F4;
 	content:"";
 	height:100%;
 	left:0;
